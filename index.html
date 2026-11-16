@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Confirmation Quiz & Study</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="top">
+    <h1>✝ Confirmation Prep</h1>
+    <button id="colorBtn" class="ghostbtn" aria-label="Change colors">🎨 Colors</button>
+  </div>
+  <nav>
+    <button data-page="study" class="tab active">📖 Study</button>
+    <button data-page="quiz" class="tab">📝 Quiz</button>
+    <button data-page="results" class="tab">📊 My Results</button>
+  </nav>
+  <div id="colorPanel" class="hidden">
+    <p>Pick a background color:</p>
+    <div id="swatches"></div>
+    <label class="custom">Or pick any color: <input type="color" id="customColor"></label>
+  </div>
+</header>
+
+<main>
+  <section id="study" class="page"></section>
+  <section id="quiz" class="page hidden"></section>
+  <section id="results" class="page hidden"></section>
+</main>
+
+<script src="data.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
